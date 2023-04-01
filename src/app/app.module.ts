@@ -10,6 +10,14 @@ import { MedOurServicesSmComponent } from './med-our-services-sm/med-our-service
 import { MedContactInfoComponent } from './med-contact-info/med-contact-info.component';
 import { NgwWowModule } from 'ngx-wow';
 import {CarouselModule} from 'ngx-owl-carousel-o';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -24,7 +32,15 @@ import {CarouselModule} from 'ngx-owl-carousel-o';
     FormsModule,
     NgwWowModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
