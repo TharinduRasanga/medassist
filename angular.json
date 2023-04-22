@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/animate.css/animate.css",
               "node_modules/wowjs/css/libs/animate.css",
@@ -102,6 +103,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -133,6 +135,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "med-assist-ui"
+    }
+  },
+  "defaultProject": "med-assist-ui",
+  "cli": {
+    "analytics": "66b2cf91-b874-4337-b22e-0db1356a688e"
+  }
 }
