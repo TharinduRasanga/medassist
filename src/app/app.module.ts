@@ -10,6 +10,22 @@ import { MedOurServicesSmComponent } from './med-our-services-sm/med-our-service
 import { MedContactInfoComponent } from './med-contact-info/med-contact-info.component';
 import { NgwWowModule } from 'ngx-wow';
 import {CarouselModule} from 'ngx-owl-carousel-o';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { LoginPageComponent } from './login/login-page/login-page.component';
+import { LoginFormComponent } from './login/login-form/login-form.component';
+import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
+import {AngularFireModule} from '@angular/fire/compat';
+import {environment} from '../environments/environment';
+import {AngularFireAuthModule} from '@angular/fire/compat/auth';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import {AngularFireStorageModule} from '@angular/fire/compat/storage';
+
+
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -24,7 +40,20 @@ import {CarouselModule} from 'ngx-owl-carousel-o';
     FormsModule,
     NgwWowModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
