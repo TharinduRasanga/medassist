@@ -12,13 +12,15 @@ import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
-  declarations: [SignInComponent],
+  declarations: [
+    SignInComponent,
+    LoginFormComponent,
+    LoginPageComponent,
+    ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     MedAuthRoutingModule,
-    LoginPageComponent,
-    LoginFormComponent,
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
