@@ -7,7 +7,8 @@ import {AngularFirestore} from '@angular/fire/firestore';
 })
 export class MedAuthService {
   constructor(
-    public afs: AngularFirestore,private auth: AngularFireAuth) {
+    private db: AngularFirestore,
+    private auth: AngularFireAuth) {
   }
 
   login(loginData: any) {
@@ -20,5 +21,24 @@ export class MedAuthService {
 
   logout() {
     return this.auth.signOut();
+  }
+
+  addNewUser(additionalFormData: any) {
+    this.db.collection('User').doc(additionalFormData.id).set(
+      {
+        firstName: additionalFormData.firstName,
+        lastName: additionalFormData.lastName,
+        mobileNumber: additionalFormData.mobileNumber,
+        mail: additionalFormData.mail
+      }
+    );
+  }
+
+  updateUser(_id: any, additionalFormData: any) {
+    this.db.doc(`User/${_id}`).update(additionalFormData);
+  }
+
+  deleteUser(_id:any) {
+    this.db.doc(`User/${_id}`).delete();
   }
 }
