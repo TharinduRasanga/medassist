@@ -9,16 +9,20 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import {RegisterFormComponent} from '../login/register-form/register-form.component';
 
 
 @NgModule({
-  declarations: [SignInComponent],
+  declarations: [
+    SignInComponent,
+    LoginFormComponent,
+    LoginPageComponent,
+    RegisterFormComponent
+    ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     MedAuthRoutingModule,
-    LoginPageComponent,
-    LoginFormComponent,
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,

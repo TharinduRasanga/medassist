@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {MedAuthService} from '../../auth/med-auth.service';
 
@@ -10,16 +10,18 @@ import {MedAuthService} from '../../auth/med-auth.service';
 export class LoginPageComponent implements OnInit {
 
   constructor(
-    private readonly authService: MedAuthService,
-    private readonly router: Router) { }
+    private authService: MedAuthService,
+    private readonly router: Router) {
+  }
 
   ngOnInit(): void {
   }
 
-  login(loginData: any) {
-    this.authService
-      .login(loginData)
-      .then(() => this.router.navigate(['/dashboard']))
-      .catch((e) => console.log(e.message));
+  register(loginData: any) {
+    this.authService.register(loginData).then(() => {
+      debugger;
+      this.authService.addNewUser(loginData);
+      this.router.navigate(['/dashboard'])
+    }).catch((e) => console.log(e.message));
   }
 }
