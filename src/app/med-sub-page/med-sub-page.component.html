@@ -1,0 +1,33 @@
+<div class="container-xxl bg-white p-0">
+  <!-- Hero Section -->
+  <div class="container-xxl py-5 bg-primary-c hero-header mb-5" *ngIf="data?.heroSection">
+    <div class="container my-1 py-1 px-lg-5">
+      <div class="row g-5 py-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="text-white mb-4 animated zoomIn">{{ data.heroSection.title }}</h1>
+          <p class="text-white pb-1 animated zoomIn">{{ data.heroSection.description }}</p>
+        </div>
+        <div class="col-lg-6 text-center text-white text-lg-start">
+          <img class="img-fluid" [src]="data.heroSection.imageSrc" alt="Hero Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What We Offer Section -->
+  <div class="container my-1 py-1" *ngIf="data?.items">
+    <div class="row g-5">
+      <div *ngFor="let section of data.items" class="col-lg-6">
+        <h2 class="text-primary mb-4">{{section.title}}</h2>
+
+        <!-- Loop through items inside each section -->
+        <div *ngFor="let item of section.items">
+          <h5 class="text-dark mb-3">{{ item.heading }}</h5>
+          <ul class="text-dark">
+            <li *ngFor="let listItem of item.list">{{ listItem }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,86 @@
 {
   "mainMenu": {
-    "home": "Home"
+    "Home": "Home",
+    "About": "About",
+    "Service": "Service",
+    "Claim": "Claim"
+  },
+  "subPage": {
+    "DOCTOR_HOUSE_CALL_VISIT": {
+      "TITLE": "Doctor's House Call or Hotel Visit Service",
+      "BODY": "",
+      "HTML": ""
+    }
+  },
+  "dashboard": {
+    "MARITIME_PROFESSIONALS": {
+      "DISPLAY_NAME": "Maritime Professionals"
+    },
+    "OPD_CONSULTATIONS": {
+      "DISPLAY_NAME": "OPD Consultations"
+    },
+    "HOSPITAL_ADMISSION_COORDINATION": {
+      "DISPLAY_NAME": "Hospital Admission"
+    },
+    "LABORATORY_INVESTIGATION_ARRANGEMENT": {
+      "DISPLAY_NAME": "Laboratory Investigation"
+    },
+    "CARDIAC_CT_AND_MRI_ARRANGEMENT": {
+      "DISPLAY_NAME": "Cardiac CT and MRI"
+    },
+    "MEDASSIST_CARE_FUND": {
+      "DISPLAY_NAME": "MedAssist Care Fund"
+    },
+    "LEGAL_ASSISTANCE": {
+      "DISPLAY_NAME": "Legal Assistance"
+    },
+    "TRAVEL_ASSISTANCE": {
+      "DISPLAY_NAME": "Travel Assistance"
+    },
+    "MEDICAL_TOURISM": {
+      "DISPLAY_NAME": "Medical Tourism"
+    },
+    "MEDASSIST_CARE_FUND": {
+      "DISPLAY_NAME": "MedAssist Care Fund"
+    },
+    "MEDICAL_ASSISTANCE": {
+      "DISPLAY_NAME": "Medical Assistance",
+      "MENU_ITEM": {
+        "DOCTORS_HOUSE_CALL_VISIT": "Doctor's House Call Visit",
+        "OPD_CONSULTATIONS": "OPD Consultations",
+        "HOSPITAL_ADMISSION_COORDINATION": "Hospital Admission Coordination / Third-Party Administration"
+      }
+    },
+    "CORPORATE_CLIENTS": {
+      "DISPLAY_NAME": "Corporate Clients",
+      "MENU_ITEM": {
+        "MEDICAL_ASSISTANCE": "Medical Assistance",
+        "DOCTORS_HOUSE_CALL_VISIT": "Doctor's House Call or Hotel Visit Service",
+        "OPD_CONSULTATIONS": "OPD Consultations",
+        "HOSPITAL_ADMISSION_COORDINATION": "Hospital Admission Coordination / Third-Party Administration",
+        "LEGAL_ASSISTANCE": "Legal Assistance",
+        "TRAVEL_ASSISTANCE": "Travel Assistance",
+        "MEDICAL_TOURISM": "Medical Tourism",
+        "MEDASSIST_CARE_FUND": "MedAssist Care Fund",
+        "ABOUT_MEDASSIST": "About MedAssist"
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Expert Care for Foreign Travelers in Sri Lanka",
+      "description": "MedAssist – Sri Lanka provides personalized medical care designed specifically for foreign travelers, ensuring comfort, convenience, and professionalism throughout your stay in Sri Lanka."
+    },
+    "offerSection": {
+      "title": "What We Offer",
+      "items": {
+        "onDemandMedicalVisits": "On-Demand Medical Visits",
+        "comprehensiveBackupServices": "Comprehensive Backup Services"
+      }
+    },
+    "additionalSections": {
+      "postVisitTelephoneAdvice": "Post-Visit Telephone Advice",
+      "languageSupport": "Language Support"
+    }
   }
 }

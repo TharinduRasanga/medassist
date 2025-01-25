@@ -5,23 +5,32 @@
   <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
     <span class="fa fa-bars"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <div class="navbar-nav ms-auto py-0">
-      <a href="index.html" class="nav-item nav-link active">{{ 'mainMenu.home' | translate }}</a>
-      <a href="about.html" class="nav-item nav-link">About</a>
-      <a href="service.html" class="nav-item nav-link">Service</a>
-      <a href="project.html" class="nav-item nav-link">Claim</a>
+  <div class="collapse navbar-collapse w-100" id="navbarCollapse">
+    <!-- Iterate over the categories and their menu items -->
+    <div *ngFor="let category of menuItems[switchMenu]">
+      <!-- Render the category dropdown -->
       <div class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-        <div class="dropdown-menu m-0">
-          <a href="team.html" class="dropdown-item">Our Team</a>
-          <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-          <a href="404.html" class="dropdown-item">404 Page</a>
+        <a class="nav-link  dropdown-toggle p-lg-1" (click)="changeMenuCallBack(category.KEY)" *ngIf="!category.MENU_ITEM" > {{ getMenuName('dashboard','', category.KEY ,'DISPLAY_NAME' )}}</a>
+        <a href="#" class="nav-link dropdown-toggle  p-lg-1" *ngIf="category.MENU_ITEM" data-bs-toggle="dropdown"> {{ getMenuName('dashboard','', category.KEY ,'DISPLAY_NAME' )}}</a>
+        <div class="dropdown-menu m-0" *ngIf="category.MENU_ITEM">
+          <!-- Iterate over the items in each category -->
+          <a *ngFor="let item of category.MENU_ITEM" class="dropdown-item" (click)="changeMenuCallBack(item.key)">
+            {{ getMenuName('dashboard', category.KEY, 'MENU_ITEM' ,item.key )}}
+          </a>
         </div>
       </div>
-      <a href="contact.html" class="nav-item nav-link">Contact</a>
     </div>
-    <button type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
-    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
+
+    <!-- Search Button and Pro Version Link -->
+<!--    <button type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+      <i class="fa fa-search"></i>
+    </button>-->
+    <!-- Optional Search Button (Now as a Toggle Button) -->
+  <!--  <label *ngIf="enableSwitch">Medical Assistance</label>
+    <label *ngIf="!enableSwitch">Specialized Menus</label>
+    <div class="pl-3"><ui-switch [(ngModel)]="enableSwitch"></ui-switch></div>-->
+    <div class="w-100">  <div class="float-end">  <ng-select [(ngModel)]="switchMenu" [clearable]="false" [items]="menuSelectItems" bindLabel="description" placeholder="--Please Select--">
+    </ng-select></div></div>
+   <!-- <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>-->
   </div>
 </nav>

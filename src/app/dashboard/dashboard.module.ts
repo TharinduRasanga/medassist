@@ -7,20 +7,18 @@ import {NgwWowModule} from 'ngx-wow';
 import {CarouselModule} from 'ngx-owl-carousel-o';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {HttpLoaderFactory} from '../app.module';
-import {MedMenuBarComponent} from '../med-menu-bar/med-menu-bar.component';
 import {MedOurServicesSmComponent} from '../med-our-services-sm/med-our-services-sm.component';
-import {MedContactInfoComponent} from '../med-contact-info/med-contact-info.component';
 import {DashboardRoutingModule} from './dashboard-routing.module';
 import {LoginFormAdditionalComponent} from '../login/login-form-additional/login-form-additional.component';
+import {MedMenuBarModule} from "../med-menu-bar/med-menu-bar.module";
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    MedMenuBarComponent,
     MedOurServicesSmComponent,
-    LoginFormAdditionalComponent,
-    MedContactInfoComponent],
+    LoginFormAdditionalComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -29,6 +27,7 @@ import {LoginFormAdditionalComponent} from '../login/login-form-additional/login
     CarouselModule,
     HttpClientModule,
     DashboardRoutingModule,
+    MedMenuBarModule,
     TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,
@@ -36,7 +35,8 @@ import {LoginFormAdditionalComponent} from '../login/login-form-additional/login
         deps: [HttpClient]
       }
     })
-  ]
+  ],
+  exports: [DashboardComponent]
 })
 export class DashboardModule {
 }

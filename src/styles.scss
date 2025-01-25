@@ -1,6 +1,6 @@
 /* Template SCSS */
 
-
+@import "~@ng-select/ng-select/themes/default.theme.css";
 :root {
   --primary: #2124B1;
   --secondary: #4777F5;
@@ -527,7 +527,7 @@ h6,
 }
 
 .bg-primary-c {
-  background-color: #0a4e48 !important;
+  background-color: #918cd5 !important; /*7167f5*/
 }
 /*
 

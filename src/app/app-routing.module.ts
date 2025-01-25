@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {MedLayoutModule} from "./med-layout/med-layout.module";
 
 const routes: Routes = [
   {
@@ -10,7 +11,7 @@ const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: () =>
-      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
+      import('./med-layout/med-layout.module').then((m) => m.MedLayoutModule),
   },
   {
     path: '**',
