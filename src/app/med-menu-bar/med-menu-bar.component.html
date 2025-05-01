@@ -10,16 +10,39 @@
     <div *ngFor="let category of menuItems[switchMenu]">
       <!-- Render the category dropdown -->
       <div class="nav-item dropdown">
-        <a class="nav-link  dropdown-toggle p-lg-1" (click)="changeMenuCallBack(category.KEY)" *ngIf="!category.MENU_ITEM" > {{ getMenuName('dashboard','', category.KEY ,'DISPLAY_NAME' )}}</a>
-        <a href="#" class="nav-link dropdown-toggle  p-lg-1" *ngIf="category.MENU_ITEM" data-bs-toggle="dropdown"> {{ getMenuName('dashboard','', category.KEY ,'DISPLAY_NAME' )}}</a>
+        <!-- First level menu item -->
+        <a class="nav-link dropdown-toggle p-lg-1" (click)="changeMenuCallBack(category.KEY)" *ngIf="!category.MENU_ITEM">
+          {{ getMenuName('dashboard', '', category.KEY, 'DISPLAY_NAME') }}
+        </a>
+        <a href="#" class="nav-link dropdown-toggle p-lg-1" *ngIf="category.MENU_ITEM" data-bs-toggle="dropdown">
+          {{ getMenuName('dashboard', '', category.KEY, 'DISPLAY_NAME') }}
+        </a>
+
+        <!-- First level dropdown menu -->
         <div class="dropdown-menu m-0" *ngIf="category.MENU_ITEM">
           <!-- Iterate over the items in each category -->
           <a *ngFor="let item of category.MENU_ITEM" class="dropdown-item" (click)="changeMenuCallBack(item.key)">
-            {{ getMenuName('dashboard', category.KEY, 'MENU_ITEM' ,item.key )}}
+            {{ getMenuName('dashboard', category.KEY, 'MENU_ITEM', item.key) }}
           </a>
+
+          <!-- Check if any item has a sub-menu and render the second level dropdown -->
+          <div *ngFor="let item of category.MENU_ITEM" class="dropdown-submenu">
+            <a href="#" class="dropdown-item dropdown-toggle" *ngIf="item.SUB_MENU" data-bs-toggle="dropdown" (click)="$event.stopPropagation()">
+              {{ getMenuName('dashboard', category.KEY, 'MENU_ITEM', item.key) }}
+            </a>
+
+            <!-- Second level dropdown menu -->
+            <div class="dropdown-menu" *ngIf="item.SUB_MENU">
+              <a *ngFor="let subItem of item.SUB_MENU" class="dropdown-item" (click)="changeMenuCallBack(subItem.key)">
+                {{ getMenuName('dashboard', category.KEY + '_SUB', 'MENU_ITEM', subItem.key) }}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
 
     <!-- Search Button and Pro Version Link -->
 <!--    <button type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">

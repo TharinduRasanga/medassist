@@ -1,23 +1,23 @@
-<div class="container-xxl bg-white p-0">
+<div class="container-xxl bg-white p-0" *ngIf="false">
   <!-- Hero Section -->
-  <div class="container-xxl py-5 bg-primary-c hero-header mb-5" *ngIf="data?.heroSection">
+  <div class="container-xxl py-5 bg-primary-c hero-header mb-5" *ngIf="data1?.heroSection">
     <div class="container my-1 py-1 px-lg-5">
       <div class="row g-5 py-5">
         <div class="col-lg-6 text-center text-lg-start">
-          <h1 class="text-white mb-4 animated zoomIn">{{ data.heroSection.title }}</h1>
-          <p class="text-white pb-1 animated zoomIn">{{ data.heroSection.description }}</p>
+          <h1 class="text-white mb-4 animated zoomIn">{{ data1.heroSection.title }}</h1>
+          <p class="text-white pb-1 animated zoomIn" [innerHTML]="data1.heroSection.description"></p>
         </div>
         <div class="col-lg-6 text-center text-white text-lg-start">
-          <img class="img-fluid" [src]="data.heroSection.imageSrc" alt="Hero Image">
+          <img class="img-fluid" [src]="data1.heroSection.imageSrc" alt="Hero Image">
         </div>
       </div>
     </div>
   </div>
 
   <!-- What We Offer Section -->
-  <div class="container my-1 py-1" *ngIf="data?.items">
+  <div class="container my-1 py-1" *ngIf="data1?.items">
     <div class="row g-5">
-      <div *ngFor="let section of data.items" class="col-lg-6">
+      <div *ngFor="let section of data1.items" class="col-lg-6">
         <h2 class="text-primary mb-4">{{section.title}}</h2>
 
         <!-- Loop through items inside each section -->
@@ -30,4 +30,86 @@
       </div>
     </div>
   </div>
+</div>
+
+
+
+<div class="container-xxl bg-white p-0">
+  <!-- Hero Section -->
+  <div class="container-xxl py-5 bg-primary-c hero-header mb-5" *ngIf="data?.heroSection">
+    <div class="container my-1 py-1 px-lg-5">
+      <div class="row g-5 py-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="text-white mb-4 animated zoomIn">{{ data.heroSection.title }}</h1>
+          <p class="text-white pb-1 animated zoomIn" [innerHTML]="data.heroSection.description"></p>
+        </div>
+        <div class="col-lg-6 text-center text-white text-lg-start">
+          <img class="img-fluid" [src]="data.heroSection.imageSrc" alt="Hero Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What We Offer Section -->
+<!--  <div class="container my-1 py-1" *ngIf="data?.items">
+    <div class="row g-5">
+      <div *ngFor="let section of data.items" class="col-lg-6">
+        <h2 class="text-primary mb-4">{{section.title}}</h2>
+        <div *ngFor="let item of section.items">
+          <h5 class="text-dark mb-3">{{ item.heading }}</h5>
+          <ul class="text-dark">
+            <li *ngFor="let listItem of item.list">{{ listItem }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  <div class="container my-1 py-1" *ngIf="data?.items">
+    <div class="row g-5">
+      <div *ngFor="let section of data.items" class="col-12">
+        <h2 class="text-primary mb-4">{{ section.title }}</h2>
+
+        <div class="row">
+          <ng-container *ngFor="let item of section.items; let i = index">
+            <!-- IF heading is present, show accordion -->
+            <div *ngIf="item.heading; else plainBlock" class="col-md-6 mb-3">
+              <div class="accordion" [attr.id]="'accordion' + item.heading | trim ">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" [id]="'heading' + item.heading | trim ">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            [attr.data-bs-target]="'#collapse' + item.heading | trim " aria-expanded="false"
+                            [attr.aria-controls]="'collapse' + item.heading | trim ">
+                      {{ item.heading }}
+                    </button>
+                  </h2>
+                  <div [id]="'collapse' + item.heading | trim " class="accordion-collapse collapse"
+                       [attr.aria-labelledby]="'heading' + item.heading | trim " [attr.data-bs-parent]="'#accordion' + item.heading | trim ">
+                    <div class="accordion-body">
+                      <ul class="text-dark mb-0">
+                        <li *ngFor="let listItem of item.list">{{ listItem }}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ELSE show plain block -->
+            <ng-template #plainBlock>
+              <div class="col-md-6 mb-3">
+                <div class="bg-light p-3 rounded border">
+                  <ul class="text-dark mb-0">
+                    <li *ngFor="let listItem of item.list">{{ listItem }}</li>
+                  </ul>
+                </div>
+              </div>
+            </ng-template>
+
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </div>

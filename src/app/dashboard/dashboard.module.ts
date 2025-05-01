@@ -11,6 +11,7 @@ import {MedOurServicesSmComponent} from '../med-our-services-sm/med-our-services
 import {DashboardRoutingModule} from './dashboard-routing.module';
 import {LoginFormAdditionalComponent} from '../login/login-form-additional/login-form-additional.component';
 import {MedMenuBarModule} from "../med-menu-bar/med-menu-bar.module";
+import {MedSpecializedClientCareModule} from "../med-specialized-client-care/med-specialized-client-care.module";
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import {MedMenuBarModule} from "../med-menu-bar/med-menu-bar.module";
     ReactiveFormsModule,
     NgwWowModule,
     CarouselModule,
+    MedSpecializedClientCareModule,
     HttpClientModule,
     DashboardRoutingModule,
     MedMenuBarModule,

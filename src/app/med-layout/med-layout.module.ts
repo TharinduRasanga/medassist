@@ -9,6 +9,7 @@ import {HttpClient} from "@angular/common/http";
 import {MedMenuBarModule} from "../med-menu-bar/med-menu-bar.module";
 import {DashboardModule} from "../dashboard/dashboard.module";
 import {MedContactInfoComponent} from "../med-contact-info/med-contact-info.component";
+import {TrimPipeModule} from "../pipe/trim/trim-pipe.module";
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import {MedContactInfoComponent} from "../med-contact-info/med-contact-info.comp
     DashboardRoutingModule,
     MedMenuBarModule,
     DashboardModule,
+    TrimPipeModule,
     TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,

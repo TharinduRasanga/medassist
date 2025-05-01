@@ -31,24 +31,39 @@
     "MEDASSIST_CARE_FUND": {
       "DISPLAY_NAME": "MedAssist Care Fund"
     },
-    "LEGAL_ASSISTANCE": {
-      "DISPLAY_NAME": "Legal Assistance"
-    },
-    "TRAVEL_ASSISTANCE": {
-      "DISPLAY_NAME": "Travel Assistance"
+    "DIAGNOSTIC_SERVICES": {
+      "DISPLAY_NAME": "Diagnostic Services",
+      "MENU_ITEM": {
+        "HOLTER_ANALYSIS_ONLINE": "Holter Analysis",
+        "ECG_INTERPRETATION_ONLINE": "ECG Interpretations",
+        "LABORATORY_INVESTIGATION_ARRANGEMENT": "Lab Investigations",
+        "CARDIAC_CT_MRI_ARRANGEMENT": "Cardiac CT and MRI"
+      }
     },
     "MEDICAL_TOURISM": {
       "DISPLAY_NAME": "Medical Tourism"
     },
     "MEDASSIST_CARE_FUND": {
-      "DISPLAY_NAME": "MedAssist Care Fund"
+      "DISPLAY_NAME": "MedAssist Care Fund",
+      "MENU_ITEM": {
+        "INTRODUCTION": "Introduction",
+        "SUCCESS_STORIES": "Success Stories",
+        "HOW_YOU_CAN_HELP": "How You Can Help"
+      }
     },
-    "MEDICAL_ASSISTANCE": {
-      "DISPLAY_NAME": "Medical Assistance",
+    "ASSISTANCE_SERVICES": {
+      "DISPLAY_NAME": "Assistance Services",
+      "MENU_ITEM": {
+        "MEDICAL_ASSISTANCE": "Medical Assistance",
+        "LEGAL_ASSISTANCE": "Legal Assistance",
+        "TRAVEL_ASSISTANCE":  "Travel Assistance"
+      }
+    },"ASSISTANCE_SERVICES_SUB": {
       "MENU_ITEM": {
         "DOCTORS_HOUSE_CALL_VISIT": "Doctor's House Call Visit",
         "OPD_CONSULTATIONS": "OPD Consultations",
-        "HOSPITAL_ADMISSION_COORDINATION": "Hospital Admission Coordination / Third-Party Administration"
+        "HOSPITAL_ADMISSION_COORDINATION": "Hospital Admission Coordination / Third-Party Administration",
+        "MEDICAL_COST_MONITORING_INVESTIGATION": "Medical cost monitoring and investigation of frauded medical claim bills"
       }
     },
     "CORPORATE_CLIENTS": {
@@ -58,8 +73,8 @@
         "DOCTORS_HOUSE_CALL_VISIT": "Doctor's House Call or Hotel Visit Service",
         "OPD_CONSULTATIONS": "OPD Consultations",
         "HOSPITAL_ADMISSION_COORDINATION": "Hospital Admission Coordination / Third-Party Administration",
+        "HOSPITAL_ADMISSION_COORDINATION": "Hospital Admission Coordination / Third-Party Administration",
         "LEGAL_ASSISTANCE": "Legal Assistance",
-        "TRAVEL_ASSISTANCE": "Travel Assistance",
         "MEDICAL_TOURISM": "Medical Tourism",
         "MEDASSIST_CARE_FUND": "MedAssist Care Fund",
         "ABOUT_MEDASSIST": "About MedAssist"

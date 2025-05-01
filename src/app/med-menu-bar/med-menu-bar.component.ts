@@ -17,177 +17,8 @@ export class MedMenuBarComponent implements OnInit {
   @Output()
   changeMenu: EventEmitter<any> = new EventEmitter();
 
-  menuItems3 = [
-    {
-      "DISPLAY_NAME": "OPD Consultations",
-      "KEY": "OPD_CONSULTATIONS"
-    },
-    {
-      "DISPLAY_NAME": "Hospital Admission Coordination",
-      "KEY": "HOSPITAL_ADMISSION_COORDINATION"
-    },
-    {
-      "DISPLAY_NAME": "Laboratory Investigation Arrangement",
-      "KEY": "LABORATORY_INVESTIGATION_ARRANGEMENT"
-    },
-    {
-      "DISPLAY_NAME": "Cardiac CT and MRI Arrangement",
-      "KEY": "CARDIAC_CT_AND_MRI_ARRANGEMENT"
-    },
-    {
-      "DISPLAY_NAME": "MedAssist Care Fund",
-      "KEY": "MEDASSIST_CARE_FUND"
-    }
-  ];
-  menuItems2 = [
-    {
-      "DISPLAY_NAME": "OPD Consultations",
-      "KEY": "OPD_CONSULTATIONS"
-    },
-    {
-      "DISPLAY_NAME": "Hospital Admission Coordination",
-      "KEY": "HOSPITAL_ADMISSION_COORDINATION"
-    },
-    {
-      "DISPLAY_NAME": "Laboratory Investigation Arrangement",
-      "KEY": "LABORATORY_INVESTIGATION_ARRANGEMENT"
-    },
-    {
-      "DISPLAY_NAME": "Cardiac CT and MRI Arrangement",
-      "KEY": "CARDIAC_CT_AND_MRI_ARRANGEMENT"
-    },
-    {
-      "DISPLAY_NAME": "MedAssist Care Fund",
-      "KEY": "MEDASSIST_CARE_FUND"
-    },
-    {
-      "DISPLAY_NAME": "Global Travelers",
-      "KEY": "GLOBAL_TRAVELERS",
-      "MENU_ITEM": [
-        {
-          "key": "MEDICAL_ASSISTANCE",
-          "value": "Medical Assistance"
-        },
-        {
-          "key": "DOCTORS_HOUSE_CALL_VISIT",
-          "value": "Doctor's House Call or Hotel Visit Service"
-        },
-        {
-          "key": "OPD_CONSULTATIONS",
-          "value": "OPD Consultations"
-        },
-        {
-          "key": "HOSPITAL_ADMISSION_COORDINATION",
-          "value": "Hospital Admission Coordination / Third-Party Administration"
-        },
-        {
-          "key": "LEGAL_ASSISTANCE",
-          "value": "Legal Assistance"
-        },
-        {
-          "key": "TRAVEL_ASSISTANCE",
-          "value": "Travel Assistance"
-        },
-        {
-          "key": "MEDICAL_TOURISM",
-          "value": "Medical Tourism"
-        },
-        {
-          "key": "MEDASSIST_CARE_FUND",
-          "value": "MedAssist Care Fund"
-        },
-        {
-          "key": "ABOUT_MEDASSIST",
-          "value": "About MedAssist"
-        }
-      ]
-    },
-    {
-      "DISPLAY_NAME": "Corporate Clients",
-      "KEY": "CORPORATE_CLIENTS",
-      "MENU_ITEM": [
-        {
-          "key": "MEDICAL_ASSISTANCE",
-          "value": "Medical Assistance"
-        },
-        {
-          "key": "DOCTORS_HOUSE_CALL_VISIT",
-          "value": "Doctor's House Call or Hotel Visit Service"
-        },
-        {
-          "key": "OPD_CONSULTATIONS",
-          "value": "OPD Consultations"
-        },
-        {
-          "key": "HOSPITAL_ADMISSION_COORDINATION",
-          "value": "Hospital Admission Coordination / Third-Party Administration"
-        },
-        {
-          "key": "LEGAL_ASSISTANCE",
-          "value": "Legal Assistance"
-        },
-        {
-          "key": "TRAVEL_ASSISTANCE",
-          "value": "Travel Assistance"
-        },
-        {
-          "key": "MEDICAL_TOURISM",
-          "value": "Medical Tourism"
-        },
-        {
-          "key": "MEDASSIST_CARE_FUND",
-          "value": "MedAssist Care Fund"
-        },
-        {
-          "key": "ABOUT_MEDASSIST",
-          "value": "About MedAssist"
-        }
-      ]
-    },
-    {
-      "DISPLAY_NAME": "Corporate Clients",
-      "KEY": "CORPORATE_CLIENTS",
-      "MENU_ITEM": [
-        {
-          "key": "MEDICAL_ASSISTANCE",
-          "value": "Medical Assistance"
-        },
-        {
-          "key": "DOCTORS_HOUSE_CALL_VISIT",
-          "value": "Doctor's House Call or Hotel Visit Service"
-        },
-        {
-          "key": "OPD_CONSULTATIONS",
-          "value": "OPD Consultations"
-        },
-        {
-          "key": "HOSPITAL_ADMISSION_COORDINATION",
-          "value": "Hospital Admission Coordination / Third-Party Administration"
-        },
-        {
-          "key": "LEGAL_ASSISTANCE",
-          "value": "Legal Assistance"
-        },
-        {
-          "key": "TRAVEL_ASSISTANCE",
-          "value": "Travel Assistance"
-        },
-        {
-          "key": "MEDICAL_TOURISM",
-          "value": "Medical Tourism"
-        },
-        {
-          "key": "MEDASSIST_CARE_FUND",
-          "value": "MedAssist Care Fund"
-        },
-        {
-          "key": "ABOUT_MEDASSIST",
-          "value": "About MedAssist"
-        }
-      ]
-    }
-  ];
-  menuItems = {'Maritime Professionals': [
+  menuItems = {
+    'Maritime Professionals': [
       {
         "DISPLAY_NAME": "OPD Consultations",
         "KEY": "OPD_CONSULTATIONS"
@@ -211,30 +42,63 @@ export class MedMenuBarComponent implements OnInit {
     ],
     'Corporate Clients': [
       {
-        "DISPLAY_NAME": "Medical Assistance",
-        "KEY": 'MEDICAL_ASSISTANCE',
+        "DISPLAY_NAME": "Assistance Services",
+        "KEY": "ASSISTANCE_SERVICES",
         "MENU_ITEM": [
           {
-            "key": "DOCTORS_HOUSE_CALL_VISIT",
-            "value": "Doctor's House Call Visit"
+            "key": "MEDICAL_ASSISTANCE",
+            "value": "Medical Assistance",
+            "SUB_MENU": [
+              {
+                "key": "DOCTORS_HOUSE_CALL_VISIT",
+                "value": "Doctor's House Call Visit"
+              },
+              {
+                "key": "OPD_CONSULTATIONS",
+                "value": "OPD Consultations"
+              },
+              {
+                "key": "HOSPITAL_ADMISSION_COORDINATION",
+                "value": "Hospital Admission Coordination / Third-Party Administration"
+              },
+              {
+                "key": "MEDICAL_COST_MONITORING_INVESTIGATION",
+                "value": "Medical cost monitoring and investigation of frauded medical claim bills"
+              }
+            ]
           },
           {
-            "key": "OPD_CONSULTATIONS",
-            "value": "OPD Consultations"
+            "key": "LEGAL_ASSISTANCE",
+            "value": "Legal Assistance"
           },
           {
-            "key": "HOSPITAL_ADMISSION_COORDINATION",
-            "value": "Hospital Admission Coordination / Third-Party Administration"
+            "value": "Travel Assistance",
+            "key": "TRAVEL_ASSISTANCE"
           }
         ]
       },
       {
-        "DISPLAY_NAME": "Legal Assistance",
-        "KEY": "LEGAL_ASSISTANCE"
-      },
-      {
-        "DISPLAY_NAME": "Travel Assistance",
-        "KEY": "TRAVEL_ASSISTANCE"
+        "DISPLAY_NAME": "Diagnostic Services",
+        "KEY": "DIAGNOSTIC_SERVICES"/*,
+        "MENU_ITEM": [
+
+          {
+            "key": "HOLTER_ANALYSIS_ONLINE",
+            "value": "Holter Analysis"
+          },
+          {
+            "key": "ECG_INTERPRETATION_ONLINE",
+            "value": "ECG Interpretation"
+          },
+          {
+            "key": "CARDIAC_CT_MRI_ARRANGEMENT",
+            "value": "Cardiac CT & MRI"
+          },
+          {
+            "key": "LABORATORY_INVESTIGATION_ARRANGEMENT",
+            "value": "Lab Investigations"
+          }
+        ]*/
       },
       {
         "DISPLAY_NAME": "Medical Tourism",
