@@ -1,5 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'med-menu-bar',
@@ -48,7 +49,7 @@ export class MedMenuBarComponent implements OnInit {
           {
             "key": "MEDICAL_ASSISTANCE",
             "value": "Medical Assistance",
-            "SUB_MENU": [
+            /*"SUB_MENU": [
               {
                 "key": "DOCTORS_HOUSE_CALL_VISIT",
                 "value": "Doctor's House Call Visit"
@@ -65,7 +66,7 @@ export class MedMenuBarComponent implements OnInit {
                 "key": "MEDICAL_COST_MONITORING_INVESTIGATION",
                 "value": "Medical cost monitoring and investigation of frauded medical claim bills"
               }
-            ]
+            ]*/
           },
           {
             "key": "LEGAL_ASSISTANCE",
@@ -147,13 +148,17 @@ export class MedMenuBarComponent implements OnInit {
     ]
   };
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService,
+              private router: Router) {
   }
 
   ngOnInit(): void {
   }
 
   changeMenuCallBack(event): void {
+    this.router.navigate([], {
+      queryParams: { menu: event}
+    });
     this.changeMenu.emit(event);
   }
 

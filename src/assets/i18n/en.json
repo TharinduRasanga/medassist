@@ -67,7 +67,7 @@
       }
     },
     "CORPORATE_CLIENTS": {
-      "DISPLAY_NAME": "Corporate Clients",
+      "DISPLAY_NAME": "Corporate Client Services",
       "MENU_ITEM": {
         "MEDICAL_ASSISTANCE": "Medical Assistance",
         "DOCTORS_HOUSE_CALL_VISIT": "Doctor's House Call or Hotel Visit Service",
