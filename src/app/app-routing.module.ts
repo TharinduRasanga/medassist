@@ -3,11 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import {MedLayoutModule} from "./med-layout/med-layout.module";
 
 const routes: Routes = [
-  {
+  /*{
     path: '',
     loadChildren: () =>
       import('./auth/med-auth.module').then((m) => m.MedAuthModule),
-  },
+  },*/
   {
     path: 'dashboard',
     loadChildren: () =>
@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: 'dashboard',
     pathMatch: 'full',
   },
 ];

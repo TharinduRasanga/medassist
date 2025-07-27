@@ -15,6 +15,14 @@
   "dashboard": {
     "MARITIME_PROFESSIONALS": {
       "DISPLAY_NAME": "Maritime Professionals"
+    },"DIAGNOSTIC_SERVICES": {
+      "DISPLAY_NAME": "Diagnostic Services"
+    },"MEDICAL_ASSISTANCE": {
+      "DISPLAY_NAME": "Medical Assistance"
+    },"LEGAL_ASSISTANCE": {
+      "DISPLAY_NAME": "Legal Assistance"
+    },"TRAVEL_ASSISTANCE": {
+      "DISPLAY_NAME": "Travel Assistance"
     },
     "OPD_CONSULTATIONS": {
       "DISPLAY_NAME": "OPD Consultations"
@@ -70,6 +78,9 @@
       "DISPLAY_NAME": "Corporate Client Services",
       "MENU_ITEM": {
         "MEDICAL_ASSISTANCE": "Medical Assistance",
+        "DIAGNOSTIC_SERVICES": "Diagnostic Services",
+        "LEGAL_ASSISTANCE": "Legal Assistance",
+        "TRAVEL_ASSISTANCE": "Travel Assistance",
         "DOCTORS_HOUSE_CALL_VISIT": "Doctor's House Call or Hotel Visit Service",
         "OPD_CONSULTATIONS": "OPD Consultations",
         "HOSPITAL_ADMISSION_COORDINATION": "Hospital Admission Coordination / Third-Party Administration",

@@ -15,6 +15,7 @@ export class MedMenuBarComponent implements OnInit {
     'Maritime Professionals',
     'Global Travelers'
   ];
+  selectedMenuKey: string | null = null;
   @Output()
   changeMenu: EventEmitter<any> = new EventEmitter();
 
@@ -43,13 +44,26 @@ export class MedMenuBarComponent implements OnInit {
     ],
     'Corporate Clients': [
       {
+        "DISPLAY_NAME": "Medical Assistance",
+        "KEY": "MEDICAL_ASSISTANCE"
+      },{
+        "DISPLAY_NAME": "Legal Assistance",
+        "KEY": "LEGAL_ASSISTANCE"
+      },{
+        "DISPLAY_NAME": "Travel Assistance",
+        "KEY": "TRAVEL_ASSISTANCE"
+      },{
+        "DISPLAY_NAME": "Diagnostic Services",
+        "KEY": "DIAGNOSTIC_SERVICES"
+      },
+    /*  {
         "DISPLAY_NAME": "Assistance Services",
         "KEY": "ASSISTANCE_SERVICES",
         "MENU_ITEM": [
           {
             "key": "MEDICAL_ASSISTANCE",
             "value": "Medical Assistance",
-            /*"SUB_MENU": [
+            /!*"SUB_MENU": [
               {
                 "key": "DOCTORS_HOUSE_CALL_VISIT",
                 "value": "Doctor's House Call Visit"
@@ -66,7 +80,7 @@ export class MedMenuBarComponent implements OnInit {
                 "key": "MEDICAL_COST_MONITORING_INVESTIGATION",
                 "value": "Medical cost monitoring and investigation of frauded medical claim bills"
               }
-            ]*/
+            ]*!/
           },
           {
             "key": "LEGAL_ASSISTANCE",
@@ -77,10 +91,10 @@ export class MedMenuBarComponent implements OnInit {
             "key": "TRAVEL_ASSISTANCE"
           }
         ]
-      },
-      {
+      },*/
+      /*{
         "DISPLAY_NAME": "Diagnostic Services",
-        "KEY": "DIAGNOSTIC_SERVICES"/*,
+        "KEY": "DIAGNOSTIC_SERVICES"/!*,
         "MENU_ITEM": [
 
           {
@@ -99,8 +113,8 @@ export class MedMenuBarComponent implements OnInit {
             "key": "LABORATORY_INVESTIGATION_ARRANGEMENT",
             "value": "Lab Investigations"
           }
-        ]*/
-      },
+        ]*!/
+      },*/
       {
         "DISPLAY_NAME": "Medical Tourism",
         "KEY": "MEDICAL_TOURISM"
@@ -156,6 +170,7 @@ export class MedMenuBarComponent implements OnInit {
   }
 
   changeMenuCallBack(event): void {
+    this.selectedMenuKey = event;
     this.router.navigate([], {
       queryParams: { menu: event}
     });
