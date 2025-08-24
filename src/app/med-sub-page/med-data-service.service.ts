@@ -960,294 +960,6 @@ export class MedDataServiceService {
         }
       ]
     },
-   /* OPD_CONSULTATIONS: {
-      "heroSection": {
-        "title": "OPD Consultations",
-        "description": "Expert Care, Tailored to Your Schedule. MedAssist Lanka ensures you receive world-class outpatient care by connecting you with top specialists at leading hospitals across Sri Lanka."
-      },
-      "items": [
-        {
-          "title": "Our Services Include",
-          "items": [
-            {
-              "heading": "Specialist Consultations",
-              "list": [
-                "We coordinate outpatient department (OPD) appointments with renowned specialists in diverse fields, ensuring expert care for your medical concerns."
-              ]
-            },
-            {
-              "heading": "Hassle-Free Scheduling",
-              "list": [
-                "Appointments arranged to suit your availability, minimizing waiting times and scheduling conflicts."
-              ]
-            },
-            {
-              "heading": "Focus on Key Specialties",
-              "list": [
-                "Access specialists across various medical fields, including:",
-                "Cardiology: Heart and vascular health management.",
-                "Orthopedics: Bone, joint, and muscle care.",
-                "Pediatrics: Comprehensive care for children’s health.",
-                "And more specialties tailored to your needs."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Why Choose MedAssist for OPD Consultations?",
-          "items": [
-            {
-              "heading": "",
-              "list": [
-                "Access to Leading Hospitals: Collaborations with top-tier healthcare institutions for quality care.",
-                "Personalized Coordination: We manage the entire process, allowing you to focus on your health.",
-                "Timely Appointments: Convenient scheduling ensures your time is valued."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Your Health, Our Priority",
-          "items": [
-            {
-              "heading": "",
-              "list": [
-                "Whether for routine check-ups or specialized medical advice, MedAssist Lanka is your trusted partner for outpatient care."
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    HOSPITAL_ADMISSION_COORDINATION: {
-      "heroSection": {
-        "title": "Hospital Admission Coordination / Third-Party Administration",
-        "description": "Seamless Solutions for Your Hospital Admission Needs. MedAssist Lanka offers comprehensive support to ensure smooth and hassle-free hospital admissions, whether for planned procedures or emergencies."
-      },
-      "items": [
-        {
-          "title": "Our Services Include",
-          "items": [
-            {
-              "heading": "Effortless Admission Coordination",
-              "list": [
-                "Direct facilitation of hospital admissions for all medical needs.",
-                "Simplified processes through coordination with healthcare providers and insurers."
-              ]
-            },
-            {
-              "heading": "Specialized Referral Support",
-              "list": [
-                "Assistance with referrals and transfers for specialized treatments across leading healthcare facilities."
-              ]
-            },
-            {
-              "heading": "Third-Party Administration Expertise",
-              "list": [
-                "Collaboration with health insurers and self-insured companies to manage:",
-                "Claims administration.",
-                "Premium collection and enrollment processes.",
-                "Outsourced responsibilities for healthcare providers establishing their own health plans."
-              ]
-            },
-            {
-              "heading": "Extensive Local Network",
-              "list": [
-                "MedAssist has built a robust network of reputed healthcare facilities across Sri Lanka.",
-                "This allows us to arrange seamless admissions and care coordination with a single call."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Why Choose MedAssist for Hospital Admission Coordination?",
-          "items": [
-            {
-              "heading": "",
-              "list": [
-                "Streamlined Experience: We handle the complexities of administrative tasks, so you can focus on your health.",
-                "Trusted Network: Access to Sri Lanka’s top hospitals and specialized providers.",
-                "24/7 Availability: Support whenever you need it, ensuring timely interventions.",
-                "Comprehensive Management: From admission to claims processing, we take care of every detail."
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    LABORATORY_INVESTIGATION_ARRANGEMENT_: {
-      "heroSection": {
-        "title": "Laboratory Investigation Arrangement",
-        "description": "Streamlined Access to Accurate Laboratory Diagnostics. MedAssist Lanka offers seamless coordination of laboratory investigations to ensure timely and precise results for healthcare providers and patients. Our partnerships with top-tier laboratories guarantee reliable diagnostics tailored to your specific health needs."
-      },
-      "items": [
-        {
-          "title": "Key Features",
-          "items": [
-            {
-              "heading": "Comprehensive Coordination",
-              "list": [
-                "Facilitation of a wide range of laboratory tests, including:",
-                "Routine blood work and biochemical panels.",
-                "Specialized investigations such as hormonal assays, genetic testing, and immunology panels.",
-                "Ensures all tests are scheduled efficiently to minimize delays."
-              ]
-            },
-            {
-              "heading": "Access to Top-Tier Laboratories",
-              "list": [
-                "Collaborations with leading diagnostic labs known for their accuracy and advanced technology.",
-                "Assurance of high-quality results for routine and complex medical investigations."
-              ]
-            },
-            {
-              "heading": "Convenient and Streamlined Process",
-              "list": [
-                "Centralized scheduling to align with patient and provider timelines.",
-                "Rapid turnaround times with simplified reporting for quick clinical decisions."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Why Choose MedAssist for Laboratory Investigations?",
-          "items": [
-            {
-              "heading": "",
-              "list": [
-                "Reliable Partnerships: Access to Sri Lanka’s most trusted and advanced laboratory facilities.",
-                "Tailored Diagnostics: Services customized to meet specific clinical and research requirements.",
-                "Efficient Workflow: Ensures a hassle-free experience for patients and healthcare providers."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Your Gateway to Accurate Laboratory Results",
-          "items": [
-            {
-              "heading": "",
-              "list": [
-                "With MedAssist Lanka, healthcare professionals and patients benefit from seamless coordination, high-quality diagnostics, and prompt reporting, making your healthcare journey stress-free."
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    CARDIAC_CT_AND_MRI_ARRANGEMENT: {
-      "heroSection": {
-        "title": "Cardiac CT and MRI Arrangement",
-        "description": "Facilitation of advanced cardiac imaging for precise diagnostics. Services include arranging cardiac CT for coronary artery assessment and MRI for structural or functional heart evaluations. Partnered with leading diagnostic centers for high-quality imaging."
-      },
-      "items": [
-        {
-          "title": "Key Features",
-          "items": [
-            {
-              "heading": "Advanced Cardiac Imaging",
-              "list": [
-                "Facilitation of advanced cardiac imaging for precise diagnostics."
-              ]
-            },
-            {
-              "heading": "Cardiac CT and MRI Services",
-              "list": [
-                "Arranging cardiac CT for coronary artery assessment.",
-                "MRI for structural or functional heart evaluations."
-              ]
-            },
-            {
-              "heading": "High-Quality Imaging",
-              "list": [
-                "Partnered with leading diagnostic centers for high-quality imaging."
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    MEDASSIST_CARE_FUND: {
-      "heroSection": {
-        "title": "MedAssist Care Fund",
-        "description": "The MedAssist Care Fund is a compassionate initiative by MedAssist Lanka to support foreign travelers in Sri Lanka who face unexpected medical emergencies and financial hardships. Whether it’s due to an extended hospital stay, severe illness, or unforeseen expenses, the fund ensures no traveler feels abandoned during their time of need."
-      },
-      "items": [
-        {
-          "title": "Why We Established the Fund",
-          "items": [
-            {
-              "heading": "",
-              "list": [
-                "To provide critical aid to those who exhaust their financial resources while recovering from illness or dealing with medical challenges.",
-                "To reinforce our commitment to delivering not just medical assistance but also hope and care when it’s needed the most."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "How It Works",
-          "items": [
-            {
-              "heading": "",
-              "list": [
-                "The fund is sustained through:",
-                "Contributions from MedAssist's profits.",
-                "Tips received for our services.",
-                "Donations from well-wishers and partners."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Success Stories",
-          "items": [
-            {
-              "heading": "Case 1: A Helping Hand for a Recovering Tourist",
-              "list": [
-                "A tourist from Europe required an extended hospital stay following a serious illness, exhausting their travel budget. The MedAssist Care Fund covered essential living expenses and coordinated with their embassy to arrange their safe return home."
-              ]
-            },
-            {
-              "heading": "Case 2: Relief for a Stranded Seafarer",
-              "list": [
-                "A seafarer fell ill while at port in Sri Lanka, unable to resume work. The fund provided immediate medical assistance and accommodation during their recovery period."
-              ]
-            },
-            {
-              "heading": "Case 3: Emergency Support for a Family in Need",
-              "list": [
-                "A visiting family faced an unexpected medical emergency and struggled to manage escalating costs. The fund assisted with hospital bills and extended their accommodation until they could return safely to their country."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "How You Can Help",
-          "items": [
-            {
-              "heading": "",
-              "list": [
-                "Donate - Your generosity directly supports travelers in need. Donate online through our secure payment gateway (Link to donation page).",
-                "Tip Generously - Add a tip when using any MedAssist service. All tips contribute to the fund.",
-                "Spread the Word - Share the mission of the MedAssist Care Fund with friends, family, and your social networks."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Transparency and Accountability",
-          "items": [
-            {
-              "heading": "",
-              "list": [
-                "We are committed to full transparency. Annual reports detailing fund usage will be published on our website to ensure accountability and build trust."
-              ]
-            }
-          ]
-        }
-      ]
-    },*/
     LEGAL_ASSISTANCE: {
       "heroSection": {
         "title": "Legal Assistance Services",
@@ -1421,6 +1133,124 @@ export class MedDataServiceService {
         }
       ]
     },
+    DIAGNOSTIC_SERVICES: {
+      "heroSection": {
+        "title": "Diagnostic Services",
+        "description": "Comprehensive & Expert-Guided Cardiac and Laboratory Diagnostics at MedAssist Lanka. We provide expert-led Holter and ECG interpretation, advanced imaging, functional cardiac testing, and hassle-free laboratory investigations.",
+        "imageSrc": "../assets/img/img4.png"
+      },
+      "items": [
+        {
+          "title": "Holter Analysis Service",
+          "items": [
+            {
+              "heading": "Expert-Led, Secure & Scalable Holter Data Interpretation",
+              "list": [
+                "Supervised by Expert Cardiac Electrophysiologists – Led by Dr. Mahendra Gunasekara with a team ensuring clinical accuracy.",
+                "Dedicated Cardiac Technicians & Cardiographers – Accurate data processing and event detection.",
+                "Secure & Compliant Data Handling – HIPAA & GDPR-compliant encryption for all data processes.",
+                "Fast & Scalable Reporting – Structured workflows and high-volume support.",
+                "Seamless Integration & Customizable Reports – Via cloud, API, or FTP/SFTP."
+              ]
+            },
+            {
+              "heading": "Capabilities",
+              "list": [
+                "Arrhythmia Classification & Event Detection",
+                "ST-Segment Analysis for Ischemic Risk",
+                "Heart Rate Variability (HRV) Assessment",
+                "Atrial Fibrillation (AF) Burden Monitoring",
+                "QT Interval & Sudden Cardiac Risk Stratification"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "ECG Interpretation Service (Upcoming)",
+          "items": [
+            {
+              "heading": "Expert-Led ECG Analysis for GPs & Primary Care",
+              "list": [
+                "Supervised by expert electrophysiologists – Led by Dr. Mahendra Gunasekara.",
+                "Precise arrhythmia and conduction abnormality detection.",
+                "Fast & reliable turnaround times.",
+                "Secure, user-friendly online platform for ECG upload and report retrieval.",
+                "HIPAA & GDPR-compliant data handling."
+              ]
+            },
+            {
+              "heading": "What We Offer",
+              "list": [
+                "12-Lead ECG Analysis",
+                "ST-T Wave & Ischemic Pattern Assessment",
+                "QT Interval Risk Stratification",
+                "Real-Time Clinical Support for GPs",
+                "Flexible Plans – Free or Subscription-Based Access"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Advanced Cardiac Diagnostic Solutions",
+          "items": [
+            {
+              "heading": "Cardiac Imaging Services",
+              "list": [
+                "Cardiac CT Angiography (CTA)",
+                "Coronary Calcium Scoring",
+                "Cardiac MRI (CMR)",
+                "Stress Cardiac MRI"
+              ]
+            },
+            {
+              "heading": "Risk Stratification & Functional Testing",
+              "list": [
+                "Ankle-Brachial Index (ABI) Testing",
+                "Pulse Wave Velocity (PWV) Testing",
+                "Cardiopulmonary Exercise Testing (CPET)",
+                "Ambulatory Blood Pressure Monitoring (ABPM)",
+                "Tilt Table Testing",
+                "Exercise Stress Testing (TMT)"
+              ]
+            },
+            {
+              "heading": "Why Choose Us?",
+              "list": [
+                "One-Stop Access to Specialist Cardiac Diagnostics",
+                "Expert-Led Recommendations & Report Validation",
+                "Priority Scheduling & Timely Reports",
+                "Access to Top Accredited Diagnostic Centers"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Laboratory Investigation Coordination",
+          "items": [
+            {
+              "heading": "Effortless & Cashless Diagnostic Testing",
+              "list": [
+                "Cashless Testing for Seafarers & Insurance Clients",
+                "Coordination for Routine & Advanced Blood Tests",
+                "Access to Cardiac Biomarkers & Hormonal Panels",
+                "Rapid Scheduling & Results",
+                "Reports Reviewed by Specialists on Request"
+              ]
+            },
+            {
+              "heading": "Why Choose Us?",
+              "list": [
+                "No Upfront Payment for Eligible Patients",
+                "Hassle-Free Coordination with Accredited Labs",
+                "Fast, Secure, and Accurate Testing",
+                "Optional Expert Interpretation for Clinical Clarity"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
     MEDICAL_TOURISM: {
       "heroSection": {
         "title": "Medical Tourism in Sri Lanka",
@@ -1577,122 +1407,435 @@ export class MedDataServiceService {
         }
       ]
     },
-    DIAGNOSTIC_SERVICES: {
+
+    CORPORATE_CLIENT_SERVICES_AND_GLOBAL_TRAVELER_ASSISTANCE: {
       "heroSection": {
-        "title": "Diagnostic Services",
-        "description": "Comprehensive & Expert-Guided Cardiac and Laboratory Diagnostics at MedAssist Lanka. We provide expert-led Holter and ECG interpretation, advanced imaging, functional cardiac testing, and hassle-free laboratory investigations.",
-        "imageSrc": "../assets/img/img4.png"
+        "title": "Integrated Medical, Legal, Diagnostic & Travel Services for Corporate Clients & Global Travelers",
+        "sections": [
+          {
+            "title": "Expert-Led Healthcare Solutions with MedAssist Lanka",
+            "description": "At MedAssist Lanka, we provide comprehensive and internationally recognized medical assistance services, ensuring timely, professional, and expert-driven healthcare solutions for foreign travelers, expatriates, corporate clients, and local patients.<br><br>🩺 All medical assistance services are directly supervised by Dr. Mahendra Gunasekara, a Senior Cardiac Electrophysiologist and the Founder of MedAssist Lanka.",
+            "imageSrc": "../assets/img/img1.png"
+          },
+          {
+            "title": "Legal Assistance Services",
+            "description": "Specialized Legal Solutions for Property, Business & Corporate Clients in Sri Lanka<br><br>At MedAssist Lanka, we provide expert legal assistance, with a special focus on property transactions, corporate law, financial legal services, and business establishment in Sri Lanka. Our legal team ensures comprehensive, transparent, and professionally managed legal support for foreign investors, expatriates, corporate clients, and entrepreneurs.<br><br>⚖️ Led by Ms. Upulie Mahagamage, Director of MedAssist Lanka Pvt Ltd, our legal division operates from two strategic locations:<br>📍 Main Office: Lawyers Office Complex, Matara New High Court Premises, Kotawila, Matara.<br>📍 Residential Law Office: No. 10, \"Senehasa,\" Matara Road, Telijjawila.<br><br>These locations provide direct access to Sri Lanka’s legal infrastructure, ensuring efficient legal support for property acquisitions, business setups, regulatory compliance, and corporate legal matters.",
+            "imageSrc": "../assets/img/img3.png"
+          },
+          {
+            "title": "Travel Assistance Services",
+            "description": "Seamless & Reliable Support for International Travelers in Sri Lanka<br><br>At MedAssist Lanka, we provide comprehensive travel assistance services, ensuring a safe, smooth, and stress-free experience for foreign travelers, expatriates, and business professionals visiting Sri Lanka. Our services are backed by our strong networks in medical assistance, legal support, and corporate services, making us a one-stop solution for all travel-related concerns.<br><br>✨ Whether you require emergency support, visa assistance, logistical coordination, or travel insurance handling, MedAssist Lanka ensures that your journey is hassle-free and well-managed.<br><br><strong>Your Journey, Our Priority</strong><br>At MedAssist Lanka, we understand the importance of seamless travel, especially during medical emergencies. Our travel assistance services are designed to ensure your journey remains stress-free and safe, no matter the circumstances.",
+            "imageSrc": "../assets/img/img2.png"
+          },
+          {
+            "title": "Diagnostic Services",
+            "description": "Comprehensive & Expert-Guided Cardiac and Laboratory Diagnostics at MedAssist Lanka. We provide expert-led Holter and ECG interpretation, advanced imaging, functional cardiac testing, and hassle-free laboratory investigations.",
+            "imageSrc": "../assets/img/img4.png"
+          }
+        ]
       },
-      "items": [
-        {
-          "title": "Holter Analysis Service",
+      "services": {
+        "MEDICAL_ASSISTANCE": {
+          "heroSection": {
+            "title": "Expert-Led Healthcare Solutions with MedAssist Lanka",
+            "description": "At MedAssist Lanka, we provide comprehensive and internationally recognized medical assistance services, ensuring timely, professional, and expert-driven healthcare solutions for foreign travelers, expatriates, corporate clients, and local patients.<br><br>🩺 All medical assistance services are directly supervised by Dr. Mahendra Gunasekara, a Senior Cardiac Electrophysiologist and the Founder of MedAssist Lanka.",
+            "imageSrc": "../assets/img/img1.png"
+          },
           "items": [
             {
-              "heading": "Expert-Led, Secure & Scalable Holter Data Interpretation",
-              "list": [
-                "Supervised by Expert Cardiac Electrophysiologists – Led by Dr. Mahendra Gunasekara with a team ensuring clinical accuracy.",
-                "Dedicated Cardiac Technicians & Cardiographers – Accurate data processing and event detection.",
-                "Secure & Compliant Data Handling – HIPAA & GDPR-compliant encryption for all data processes.",
-                "Fast & Scalable Reporting – Structured workflows and high-volume support.",
-                "Seamless Integration & Customizable Reports – Via cloud, API, or FTP/SFTP."
-              ]
-            },
-            {
-              "heading": "Capabilities",
-              "list": [
-                "Arrhythmia Classification & Event Detection",
-                "ST-Segment Analysis for Ischemic Risk",
-                "Heart Rate Variability (HRV) Assessment",
-                "Atrial Fibrillation (AF) Burden Monitoring",
-                "QT Interval & Sudden Cardiac Risk Stratification"
+              "title": "Medical Assistance Services",
+              items: [
+                {
+                  heading: "Doctor’s House Call & Hotel Visit",
+                  list: [
+                    "Urgent & Routine Medical Consultations – Doctors available 24/7",
+                    "Emergency & Backup Support: Ground Ambulance, 24/7 Air Evacuation",
+                    "Hospital Admission & Insurance Assistance",
+                    "Post-Consultation Follow-Up",
+                    "Multilingual Support – Russian, German, French, etc."
+                  ]
+                },
+                {
+                  heading: "Outpatient (OPD) Consultation Coordination",
+                  list: [
+                    "Specialist Consultations & Priority Booking",
+                    "Access to Key Specialties: Cardiology, Orthopedics, Pediatrics, etc."
+                  ]
+                },
+                {
+                  heading: "Hospital Admission & TPA Services",
+                  list: [
+                    "Effortless Admission Coordination & Specialist Referrals",
+                    "TPA Services – Insurance claims and health plan management",
+                    "Trusted Network of Leading Hospitals"
+                  ]
+                },
+                {
+                  heading: "Medical Cost Review & Fraud Investigation",
+                  list: [
+                    "Medical Cost Monitoring & Insurance Claim Verification",
+                    "Fraudulent Claim Investigation"
+                  ]
+                },
+                {
+                  heading: "Telemedicine & Virtual Care",
+                  list: [
+                    "General Telemedicine Consultations",
+                    "Specialist Virtual Appointments",
+                    "Prescription & Medication Guidance"
+                  ]
+                },
+                {
+                  heading: "Medical Evacuation & Repatriation",
+                  list: [
+                    "Ground & Air Ambulance Transfers",
+                    "International Medical Evacuation",
+                    "Mortal Remains Repatriation"
+                  ]
+                },
+                {
+                  heading: "Long-Term Care for Expats & Seniors",
+                  list: [
+                    "Home Nursing & Medical Assistance",
+                    "Regular Health Check-Ups",
+                    "Emergency Medical Support for Expats"
+                  ]
+                },
+                {
+                  heading: "Corporate & Occupational Health Services",
+                  list: [
+                    "On-Site Medical Services",
+                    "Occupational Health & Safety Programs",
+                    "Corporate Insurance Liaison"
+                  ]
+                },
+                {
+                  heading: "Specialist Case Management",
+                  list: [
+                    "Personalized Case Management",
+                    "Cross-Border Referrals & Second Opinions",
+                    "Insurance & Travel Liaison"
+                  ]
+                },
+                {
+                  heading: "International Repatriation Services",
+                  list: [
+                    "Legal, Documentation & Embassy Coordination",
+                    "Mortuary & Customs Clearance",
+                    "Supervised by Medical Professionals"
+                  ]
+                },
+                {
+                  heading: "Medical Escort Services",
+                  list: [
+                    "Air & Ground Medical Escorts",
+                    "International Medical Transfers",
+                    "Emergency & Non-Emergency Transfers",
+                    "Bed-to-Bed Care Coordination",
+                    "Portable Equipment & Oxygen Support",
+                    "Supervised by Dr. Mahendra Gunasekara"
+                  ]
+                }
               ]
             }
           ]
         },
-        {
-          "title": "ECG Interpretation Service (Upcoming)",
+        "LEGAL_ASSISTANCE": {
+          "heroSection": {
+            "title": "Legal Assistance Services",
+            "description": "Specialized Legal Solutions for Property, Business & Corporate Clients in Sri Lanka<br><br>At MedAssist Lanka, we provide expert legal assistance, with a special focus on property transactions, corporate law, financial legal services, and business establishment in Sri Lanka. Our legal team ensures comprehensive, transparent, and professionally managed legal support for foreign investors, expatriates, corporate clients, and entrepreneurs.<br><br>⚖️ Led by Ms. Upulie Mahagamage, Director of MedAssist Lanka Pvt Ltd, our legal division operates from two strategic locations:<br>📍 Main Office: Lawyers Office Complex, Matara New High Court Premises, Kotawila, Matara.<br>📍 Residential Law Office: No. 10, \"Senehasa,\" Matara Road, Telijjawila.<br><br>These locations provide direct access to Sri Lanka’s legal infrastructure, ensuring efficient legal support for property acquisitions, business setups, regulatory compliance, and corporate legal matters.",
+            "imageSrc": "../assets/img/img3.png"
+          },
           "items": [
             {
-              "heading": "Expert-Led ECG Analysis for GPs & Primary Care",
-              "list": [
-                "Supervised by expert electrophysiologists – Led by Dr. Mahendra Gunasekara.",
-                "Precise arrhythmia and conduction abnormality detection.",
-                "Fast & reliable turnaround times.",
-                "Secure, user-friendly online platform for ECG upload and report retrieval.",
-                "HIPAA & GDPR-compliant data handling."
-              ]
-            },
-            {
-              "heading": "What We Offer",
-              "list": [
-                "12-Lead ECG Analysis",
-                "ST-T Wave & Ischemic Pattern Assessment",
-                "QT Interval Risk Stratification",
-                "Real-Time Clinical Support for GPs",
-                "Flexible Plans – Free or Subscription-Based Access"
+              "title": "Legal Assistance Services",
+              "items": [
+                {
+                  "title": "Legal Assistance Services",
+                  "items": [
+                    {
+                      "heading": "Property & Corporate Law",
+                      "list": [
+                        "Acquisition of Land & Property in Sri Lanka",
+                        "Legal verification of property ownership & title deeds.",
+                        "Due diligence for foreign investments in real estate.",
+                        "Preparation & notarization of sale agreements, leases, and mortgage documents.",
+                        "Business Establishment & Corporate Structuring",
+                        "Company registration for foreign & local investors.",
+                        "Drafting & reviewing shareholder agreements and business contracts.",
+                        "Regulatory compliance & licensing for new businesses.",
+                        "Corporate Governance & Compliance",
+                        "Advisory services for corporate mergers, acquisitions, and restructuring.",
+                        "Corporate tax law compliance & financial advisory support.",
+                        "Employment contracts & labor law compliance for businesses.",
+                        "Need expert legal advice on property acquisition or business setup? Contact Us Now!"
+                      ]
+                    },
+                    {
+                      "heading": "Corporate & Financial Legal Services",
+                      "list": [
+                        "Foreign Investment & Business Advisory",
+                        "Assistance with BOI (Board of Investment) approvals for foreign investors.",
+                        "Guidance on industry-specific licenses & tax structures.",
+                        "Commercial contract drafting & dispute resolution.",
+                        "Financial & Banking Legal Services",
+                        "Legal advisory on business loans, banking transactions, and corporate finance.",
+                        "Debt recovery & financial dispute resolution.",
+                        "Assistance in drafting and executing financial agreements.",
+                        "Regulatory & Tax Compliance",
+                        "Guidance on Sri Lanka’s corporate tax laws & financial regulations.",
+                        "Audit and legal compliance checks for businesses.",
+                        "Advisory services for international businesses expanding into Sri Lanka.",
+                        "Need corporate or financial legal assistance? Speak to Our Experts!"
+                      ]
+                    },
+                    {
+                      "heading": "Immigration & Business Relocation Services",
+                      "list": [
+                        "Business Visas & Residency Permits",
+                        "Legal processing for long-term visas & expatriate work permits.",
+                        "Assistance with business investor visa applications.",
+                        "Compliance with Sri Lanka’s immigration laws.",
+                        "Company Relocation & International Expansion",
+                        "Assistance with moving corporate entities to Sri Lanka.",
+                        "Business incorporation & tax structuring for relocated firms.",
+                        "Employment & labor law advisory for international businesses.",
+                        "Planning to relocate or invest in Sri Lanka? Let’s Get Started!"
+                      ]
+                    },
+                    {
+                      "heading": "Additional Legal Services",
+                      "list": [
+                        "Legal Representation & Dispute Resolution",
+                        "Court representation for corporate & property disputes.",
+                        "Alternative dispute resolution (arbitration & mediation).",
+                        "Personal & Family Law",
+                        "Marriage contracts, divorce settlements & child custody.",
+                        "Legal assistance in will drafting & inheritance matters.",
+                        "Personal Injury & Insurance Claims",
+                        "Legal support for accident claims & travel insurance disputes.",
+                        "Medical malpractice claims & patient rights advocacy.",
+                        "Need Professional Legal Support in Sri Lanka? Contact Us Today!"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
         },
-        {
-          "title": "Advanced Cardiac Diagnostic Solutions",
+        "TRAVEL_ASSISTANCE": {
+          "heroSection": {
+            "title": "Travel Assistance Services",
+            "description": "Seamless & Reliable Support for International Travelers in Sri Lanka<br><br>At MedAssist Lanka, we provide comprehensive travel assistance services, ensuring a safe, smooth, and stress-free experience for foreign travelers, expatriates, and business professionals visiting Sri Lanka. Our services are backed by our strong networks in medical assistance, legal support, and corporate services, making us a one-stop solution for all travel-related concerns.<br><br>✨ Whether you require emergency support, visa assistance, logistical coordination, or travel insurance handling, MedAssist Lanka ensures that your journey is hassle-free and well-managed.<br><br><strong>Your Journey, Our Priority</strong><br>At MedAssist Lanka, we understand the importance of seamless travel, especially during medical emergencies. Our travel assistance services are designed to ensure your journey remains stress-free and safe, no matter the circumstances.",
+            "imageSrc": "../assets/img/img2.png"
+          },
           "items": [
             {
-              "heading": "Cardiac Imaging Services",
-              "list": [
-                "Cardiac CT Angiography (CTA)",
-                "Coronary Calcium Scoring",
-                "Cardiac MRI (CMR)",
-                "Stress Cardiac MRI"
-              ]
-            },
-            {
-              "heading": "Risk Stratification & Functional Testing",
-              "list": [
-                "Ankle-Brachial Index (ABI) Testing",
-                "Pulse Wave Velocity (PWV) Testing",
-                "Cardiopulmonary Exercise Testing (CPET)",
-                "Ambulatory Blood Pressure Monitoring (ABPM)",
-                "Tilt Table Testing",
-                "Exercise Stress Testing (TMT)"
-              ]
-            },
-            {
-              "heading": "Why Choose Us?",
-              "list": [
-                "One-Stop Access to Specialist Cardiac Diagnostics",
-                "Expert-Led Recommendations & Report Validation",
-                "Priority Scheduling & Timely Reports",
-                "Access to Top Accredited Diagnostic Centers"
+              "title": "Travel Assistance Services",
+              "items": [
+                {
+                  "heading": "Medical Evacuation & Repatriation Coordination",
+                  "list": [
+                    "Efficient planning and coordination for medical evacuations by air or ground transport.",
+                    "International repatriation support for travelers requiring continued medical treatment in their home country."
+                  ]
+                },
+                {
+                  "heading": "Assistance with Travel Insurance Claims",
+                  "list": [
+                    "Expert guidance & documentation to process claims for medical expenses.",
+                    "Liaison with insurance providers to ensure smooth and timely reimbursements."
+                  ]
+                },
+                {
+                  "heading": "Post-Illness Travel Arrangements",
+                  "list": [
+                    "Arranging travel plans after recovery, ensuring safety and compliance with health regulations.",
+                    "Issuance of fitness-to-fly certifications for patients requiring validation before air travel."
+                  ]
+                },
+                {
+                  "heading": "Emergency Travel Assistance",
+                  "list": [
+                    "Lost Passport & Travel Document Support – Assistance in obtaining emergency travel documents, liaising with embassies, and securing temporary passports.",
+                    "Medical Emergencies & Travel Insurance Coordination – Hospital admissions, evacuation planning, and insurance claim assistance for medical emergencies.",
+                    "Flight Rescheduling & Rebooking – Help with rebooking flights in case of emergencies, medical needs, or visa issues.",
+                    "Emergency Accommodation Arrangements – Immediate hotel bookings for stranded travelers or those requiring medical recovery stays.",
+                    "Facing an unexpected travel issue? Let us assist you 24/7!"
+                  ]
+                },
+                {
+                  "heading": "Visa & Immigration Assistance",
+                  "list": [
+                    "Medical Visa Extensions – Assistance for travelers requiring extended stays for medical treatment.",
+                    "Business & Work Visa Support – Guidance for corporate travelers, investors, and expatriates.",
+                    "Tourist Visa Extensions – Help with visa renewals to avoid overstays and legal complications.",
+                    "Legal Documentation & Compliance – Collaboration with immigration authorities for seamless processing.",
+                    "Need visa or immigration support? Contact our legal experts!"
+                  ]
+                },
+                {
+                  "heading": "Airport & Transportation Services",
+                  "list": [
+                    "VIP Airport Meet & Greet Services – Personal assistance for arrival, baggage handling, and fast-track immigration clearance.",
+                    "Private Chauffeur & Vehicle Hire – Well-maintained vehicles with professional drivers for airport transfers and intercity travel.",
+                    "Medical Transport Arrangements – Special ambulance and medical transport coordination for patients and seniors.",
+                    "Helicopter & Private Jet Charters – Exclusive air travel solutions for high-priority business and medical evacuations.",
+                    "Book your airport transfers or private travel now!"
+                  ]
+                },
+                {
+                  "heading": "Corporate & Business Travel Solutions",
+                  "list": [
+                    "Corporate Travel Arrangements – End-to-end travel planning for business delegations, conferences, and corporate meetings.",
+                    "Luxury Hotel & Serviced Apartment Reservations – Exclusive rates for high-end accommodations in Sri Lanka.",
+                    "Translation & Interpretation Services – Multilingual assistance for business travelers requiring real-time language support.",
+                    "Legal & Financial Assistance for Business Travelers – Guidance on foreign investments, business visas, and corporate legal matters.",
+                    "Need business travel coordination? Let us handle everything!"
+                  ]
+                },
+                {
+                  "heading": "Specialized Travel Support for Expatriates & Long-Term Visitors",
+                  "list": [
+                    "Healthcare Coordination for Expats – Access to Sri Lanka’s best hospitals, specialists, and long-term care facilities.",
+                    "Relocation Assistance – Support for moving, housing, and settling into Sri Lanka.",
+                    "Legal & Insurance Advisory – Expert guidance on expat rights, contracts, and healthcare coverage.",
+                    "Planning to stay longer in Sri Lanka? Get expert assistance now!"
+                  ]
+                },
+                {
+                  "heading": "Why Choose MedAssist Lanka for Travel Assistance?",
+                  "list": [
+                    "24/7 Emergency Support – Always available for urgent travel-related needs.",
+                    "Integrated Medical, Legal & Corporate Assistance – A complete travel support system for all requirements.",
+                    "Trusted Network of Partners – Collaborations with hotels, airlines, embassies, and local authorities.",
+                    "Seamless Coordination – Ensuring a smooth, worry-free travel experience in Sri Lanka.",
+                    "Need travel assistance in Sri Lanka? Contact Us Now!"
+                  ]
+                }
               ]
             }
           ]
         },
-        {
-          "title": "Laboratory Investigation Coordination",
+        "DIAGNOSTIC_SERVICES": {
+          "heroSection": {
+            "title": "Diagnostic Services",
+            "description": "Comprehensive & Expert-Guided Cardiac and Laboratory Diagnostics at MedAssist Lanka. We provide expert-led Holter and ECG interpretation, advanced imaging, functional cardiac testing, and hassle-free laboratory investigations.",
+            "imageSrc": "../assets/img/img4.png"
+          },
           "items": [
             {
-              "heading": "Effortless & Cashless Diagnostic Testing",
-              "list": [
-                "Cashless Testing for Seafarers & Insurance Clients",
-                "Coordination for Routine & Advanced Blood Tests",
-                "Access to Cardiac Biomarkers & Hormonal Panels",
-                "Rapid Scheduling & Results",
-                "Reports Reviewed by Specialists on Request"
+              "title": "Holter Analysis Service",
+              "items": [
+                {
+                  "heading": "Expert-Led, Secure & Scalable Holter Data Interpretation",
+                  "list": [
+                    "Supervised by Expert Cardiac Electrophysiologists – Led by Dr. Mahendra Gunasekara with a team ensuring clinical accuracy.",
+                    "Dedicated Cardiac Technicians & Cardiographers – Accurate data processing and event detection.",
+                    "Secure & Compliant Data Handling – HIPAA & GDPR-compliant encryption for all data processes.",
+                    "Fast & Scalable Reporting – Structured workflows and high-volume support.",
+                    "Seamless Integration & Customizable Reports – Via cloud, API, or FTP/SFTP."
+                  ]
+                },
+                {
+                  "heading": "Capabilities",
+                  "list": [
+                    "Arrhythmia Classification & Event Detection",
+                    "ST-Segment Analysis for Ischemic Risk",
+                    "Heart Rate Variability (HRV) Assessment",
+                    "Atrial Fibrillation (AF) Burden Monitoring",
+                    "QT Interval & Sudden Cardiac Risk Stratification"
+                  ]
+                }
               ]
             },
             {
-              "heading": "Why Choose Us?",
-              "list": [
-                "No Upfront Payment for Eligible Patients",
-                "Hassle-Free Coordination with Accredited Labs",
-                "Fast, Secure, and Accurate Testing",
-                "Optional Expert Interpretation for Clinical Clarity"
+              "title": "ECG Interpretation Service (Upcoming)",
+              "items": [
+                {
+                  "heading": "Expert-Led ECG Analysis for GPs & Primary Care",
+                  "list": [
+                    "Supervised by expert electrophysiologists – Led by Dr. Mahendra Gunasekara.",
+                    "Precise arrhythmia and conduction abnormality detection.",
+                    "Fast & reliable turnaround times.",
+                    "Secure, user-friendly online platform for ECG upload and report retrieval.",
+                    "HIPAA & GDPR-compliant data handling."
+                  ]
+                },
+                {
+                  "heading": "What We Offer",
+                  "list": [
+                    "12-Lead ECG Analysis",
+                    "ST-T Wave & Ischemic Pattern Assessment",
+                    "QT Interval Risk Stratification",
+                    "Real-Time Clinical Support for GPs",
+                    "Flexible Plans – Free or Subscription-Based Access"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Advanced Cardiac Diagnostic Solutions",
+              "items": [
+                {
+                  "heading": "Cardiac Imaging Services",
+                  "list": [
+                    "Cardiac CT Angiography (CTA)",
+                    "Coronary Calcium Scoring",
+                    "Cardiac MRI (CMR)",
+                    "Stress Cardiac MRI"
+                  ]
+                },
+                {
+                  "heading": "Risk Stratification & Functional Testing",
+                  "list": [
+                    "Ankle-Brachial Index (ABI) Testing",
+                    "Pulse Wave Velocity (PWV) Testing",
+                    "Cardiopulmonary Exercise Testing (CPET)",
+                    "Ambulatory Blood Pressure Monitoring (ABPM)",
+                    "Tilt Table Testing",
+                    "Exercise Stress Testing (TMT)"
+                  ]
+                },
+                {
+                  "heading": "Why Choose Us?",
+                  "list": [
+                    "One-Stop Access to Specialist Cardiac Diagnostics",
+                    "Expert-Led Recommendations & Report Validation",
+                    "Priority Scheduling & Timely Reports",
+                    "Access to Top Accredited Diagnostic Centers"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Laboratory Investigation Coordination",
+              "items": [
+                {
+                  "heading": "Effortless & Cashless Diagnostic Testing",
+                  "list": [
+                    "Cashless Testing for Seafarers & Insurance Clients",
+                    "Coordination for Routine & Advanced Blood Tests",
+                    "Access to Cardiac Biomarkers & Hormonal Panels",
+                    "Rapid Scheduling & Results",
+                    "Reports Reviewed by Specialists on Request"
+                  ]
+                },
+                {
+                  "heading": "Why Choose Us?",
+                  "list": [
+                    "No Upfront Payment for Eligible Patients",
+                    "Hassle-Free Coordination with Accredited Labs",
+                    "Fast, Secure, and Accurate Testing",
+                    "Optional Expert Interpretation for Clinical Clarity"
+                  ]
+                }
               ]
             }
           ]
         }
-      ]
+      }
     }
   };
 

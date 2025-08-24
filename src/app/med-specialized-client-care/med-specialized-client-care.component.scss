@@ -130,3 +130,16 @@ h1, h3, h5 {
     font-size: 1.1em;
   }
 }
+
+/* For Bootstrap 4 – make modal full screen */
+.modal-dialog.modal-fullscreen {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.modal-content {
+  height: 100%;
+  border-radius: 0;
+}

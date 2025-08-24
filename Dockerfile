@@ -12,8 +12,8 @@ COPY . /usr/local
 FROM nginx:1.14-alpine
 COPY --from=build /usr/local/dist/med-assist-ui /usr/share/nginx/html
 
-#COPY certNew.csr /etc/nginx/certNew.csr
-#COPY keyNew.key /etc/nginx/keyNew.key
+COPY certNew.csr /etc/nginx/certNew.csr
+COPY keyNew.key /etc/nginx/keyNew.key
 COPY nginx.conf.temp /nginx.conf.temp
 
 # https://punchsalad.com/ssl-certificate-generator/  https://www.youtube.com/watch?v=DZOBGDE_EB8

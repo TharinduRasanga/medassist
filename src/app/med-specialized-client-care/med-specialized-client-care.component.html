@@ -1,29 +1,29 @@
 <div class="container">
   <h1>Specialized Client Care</h1>
   <div class="widget">
-    <a href="#corporate" class="section">
+    <span (click)="openModal('Corporate')" class="section">
       <h3>Corporate Client Services</h3>
       <ul>
         <li>Insurance & Assistance Companies</li>
         <li>Multinational Corporations</li>
         <li>Corporate Partnerships</li>
       </ul>
-    </a>
-    <a href="#global" class="section">
+    </span>
+    <span (click)="openModal('Corporate')" class="section">
       <h3>Global Traveler Assistance </h3>
       <ul>
         <li>Leisure Travelers</li>
         <li>Business Travelers</li>
         <li>Long-Term Visitors & Expats</li>
       </ul>
-    </a>
-    <a href="#maritime" class="section">
+    </span>
+    <span (click)="openModal('Maritime')" class="section">
       <h3>Maritime Professional Assistance</h3>
       <ul>
         <li>Seafarers</li>
         <li>Family Members</li>
       </ul>
-    </a>
+    </span>
   </div>
 </div>
 
@@ -44,3 +44,25 @@
     </a>
   </div>
 </div>
+
+
+<div class="modal fade" [ngClass]="{'show d-block': showModal}" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel" aria-hidden="!showModal">
+  <div class="modal-dialog modal-fullscreen" role="document">
+    <div class="modal-content">
+      <!--  <div class="modal-header">
+          <h5 class="modal-title">Fullscreen Bootstrap Modal in Angular</h5>
+          <button type="button" class="close" (click)="closeModal()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>-->
+      <div class="modal-body">
+        <app-med-popup *ngIf="menuType != ''" [menuType]="menuType"></app-med-popup>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="showModal" class="modal-backdrop fade show"></div>

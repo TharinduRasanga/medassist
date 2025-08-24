@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-med-specialized-client-care',
@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MedSpecializedClientCareComponent implements OnInit {
 
-  constructor() { }
+  showModal = false;
+  menuType: any = '';
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  openModal(event) {
+    this.menuType = event;
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+    this.menuType = '';
+  }
 }
